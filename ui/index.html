@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DigiSage - Digikala FAQ Assistant</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" href="/ui/styles/style.css" />
+		<script src="/ui/js/index.js"></script>
+		<!-- <link rel="stylesheet" href="styles/style.css" />
+		<script src="js/index.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="left_container">
+				<div class="name">DigiSage</div>
+				<div>- Your Personal Digikala Assistant!</div>
+			</div>
+			<div class="right_container">
+				<div>v0.0.243</div>
+			</div>
+		</div>
+
+		<div class="retrieval">
+			<button type="button" class="retrieval_button">بازیابی</button>
+		</div>
+
+		<div class="blur"></div>
+		<div class="retrieval_result_focused"></div>
+		<div class="retrieval_result"></div>
+
+		<div class="chat">
+			<div class="history scroll"></div>
+			<form id="query-form">
+				<input
+					type="text"
+					id="query"
+					name="query"
+					placeholder="کوئری خود را وارد کنید"
+					required
+				/>
+				<button class="send_button" type="submit">
+					<img src="/ui/images/send.png" alt="ارسال" />
+					<!-- <img src="images/send.png" alt="ارسال" /> -->
+				</button>
+			</form>
+		</div>
+
+		<!-- <div class="retrieval">
+		</div> -->
+	</body>
+</html>
